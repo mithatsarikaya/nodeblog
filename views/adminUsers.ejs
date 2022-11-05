@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <%-include('./inc/head')%>
+  </head>
+  <body>
+    <%-include('./inc/nav')%>
+    <section>
+      <h1>Yazilar</h1>
+      <ul>
+        <% users.forEach(user => { %>
+        <li>
+          <a href=""><%=user.username%></a>
+          <p><%=user.password%></p>
+        </li>
+        <% }) %>
+
+        <!-- <li>
+          <a href="#">Blog 2</a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+            aliquam.
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+            aliquam.
+          </p>
+        </li>
+        <li>
+          <a href="#">Blog 3</a>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, animi?
+          </p>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Non, animi?
+          </p>
+        </li> -->
+      </ul>
+    </section>
+  </body>
+</html>
